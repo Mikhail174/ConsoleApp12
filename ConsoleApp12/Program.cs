@@ -48,10 +48,9 @@ namespace ConsoleApp12
                 Console.WriteLine("Площадь окружности равна " + so);
             }
             Console.ReadKey();
-
-
-
-
         }
     }
 }
+/*2.Cделал две таблицы tblProd(ProdId,NameProd,CatId) и tblCateg(CatId,NameCat). Соединил FK по полю 'CatId'. Итого запрос получается вида: 
+SELECT DISTINCT NameProd,NameCat FROM tblProd
+LEFT JOIN tblCateg ON tblProd.CatId=tblCateg.CatId*/
